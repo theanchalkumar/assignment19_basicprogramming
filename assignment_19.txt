@@ -1,0 +1,76 @@
+1.
+
+def double(str):
+    for i in range(len(str)):
+        return i * 2
+
+2.
+
+
+def fuctionName(int, bool):
+    if int in range(...):
+        if bool == True:
+            return False
+        else:
+            return True
+
+3.
+
+def num_layers(a):
+    Sum = 0
+    for i in range(-1, 100):
+        for k in range(1, a+1):
+            Sum += 2**i
+            if k == a+1:
+                break
+    return (Sum)/1000
+
+4.
+
+test_str = 'GeeKsFoRGEEks'
+upperalphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+# printing original string
+print("The original string is : " + str(test_str))
+res=[]
+# Uppercase check
+for i in range(0,len(test_str)):
+    if test_str[i] in upperalphabets:
+        res.append(i)
+# printing result
+print("Uppercase elements indices : " + str(res))
+
+
+5.
+
+list1 = [10, 21, 4, 45, 66, 93]
+ 
+# iterating each number in list
+for num in list1:
+ 
+    # checking condition
+    if num % 2 == 0:
+        print(num, end=" ")
+
+or
+
+list1 = [10, 24, 4, 45, 66, 93]
+num = 0
+ 
+# using while loop
+while(num < len(list1)):
+ 
+    # checking condition
+    if list1[num] % 2 == 0:
+        print(list1[num], end=" ")
+ 
+    # increment num
+    num += 1
+
+or
+
+list1 = [10, 21, 4, 45, 66, 93]
+ 
+# using list comprehension
+even_nos = [num for num in list1 if num % 2 == 0]
+ 
+print("Even numbers in the list: ", even_nos)
